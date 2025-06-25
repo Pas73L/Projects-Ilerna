@@ -1,0 +1,137 @@
+/* AGREGO UNA FUENTE PARECIDA A LA DE MARIO BROS */
+@font-face {
+  font-family: 'supermario'; 
+  src: url('Super\ Mario\ Bros..ttf') format('truetype'); /
+
+}
+
+body{
+  font-family: "supermario";
+    background-image: url(../img/fondo.jpeg); 
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center ;
+    background-attachment: fixed;
+
+}
+
+td, th {
+  padding-right: 20px;
+  text-align: center;
+}
+
+#menuplay{
+  background-image: url(../img/fondoR.jpg);
+  background-size: cover;
+  position: fixed;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  width: 16%;
+  height: 10%;
+}
+
+
+#tablaRanking{
+  position: fixed;
+  width: 40%;
+  height: 35%;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url(../img/fondoR.jpg);
+  background-size: cover;
+  font-size:  2vw;
+  font-weight: bold;
+
+}
+
+#favorita{
+  padding-left: 10%;
+  
+}
+#favorita img{
+  width: 28%;
+  height: 28%;
+}
+
+#gif{
+  position: fixed;
+  width: 10%;
+  height: 25%;
+  top: 55%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url(../img/mario.gif);
+  background-size: cover;
+
+}
+/*------------------------DIVS DEL CUERPO DONDE SE ENCUENTRAN LAS PLANTAS-------------------------------------------------*/
+#main {
+  position: fixed;
+  top: 19vh; 
+  bottom: 13vh; 
+  width: 100vw;
+  /* ESTAS PROPIEDADES AYUDAN A CENTRAR LOS DIVS CONTENEDOR CREADOS*/
+  display: flex; 
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan a una nueva línea */
+}
+.contenedor{
+  
+  height: 99%; 
+  position: relative; /* Cambiado a 'relative' para poder alinearlos horizontalmente */
+  display: inline-block; /* Alinea los elementos uno al lado del otro */
+  width: 10%;
+  bottom: 0; 
+  margin-left: 20px;/* Separacion de uno con el otro de 20px como indica el ejercicio */
+  
+
+}
+
+.maceta {
+  position: absolute;
+  height: 25%;
+  width: 97%; 
+  bottom: 0;
+  background-image: url(../img/tunel.png);
+  background-size: cover;
+}
+.numero{
+  position: relative;
+  top: 35%;
+  font-size: 5vw;
+  text-align:center;
+}
+
+
+.tallo{
+  position: absolute;
+  height: 40%; /* Altura del tallo */
+  width: 5%; /* Ancho del tallo */
+  bottom: 97%; /* Coloca el tallo encima de #maceta, ajusta según sea necesario */
+  left: 50%; /* Alinea el tallo al centro de #contenedor */
+  transform: translateX(-50%); /* Centra el tallo horizontalmente */
+  background-color: #01AB17;
+  border: solid 2px;
+  border-color: black;
+}
+.flor{
+  background-image: url(../img/piña.png);
+  background-size: 130% 160%;
+  background-repeat: no-repeat;
+  background-position:45% -5%;
+  position: absolute;
+  height: 60px; /* Altura del flor */
+  width: 60px; /* Ancho de la flor */
+  bottom: 92%; /* Coloca la flor encima de #tallo, ajusta según sea necesario */
+  left: 50%; /* Alinea el la flor al centro de #contenedor */
+  transform: translateX(-50%); /* Centra la flor horizontalmente */
+
+}
